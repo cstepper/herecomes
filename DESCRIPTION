@@ -2,9 +2,8 @@ Package: herecomes
 Type: Package
 Title: Here Comes The Hot Stepper
 Version: 0.1.0
-Author: Christoph Stepper
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
+Authors@R: person("Christoph", "Stepper", "christoph.stepper@gmail.com", c("aut", "cre")
+Description: Here comes the Hot Stepper
     Use four spaces when indenting paragraphs within the Description.
 License: MIT
 Encoding: UTF-8
