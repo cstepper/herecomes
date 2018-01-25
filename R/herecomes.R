@@ -1,17 +1,19 @@
 #' @title Here comes the Hotstepper
 #'
 #' @author Christoph Stepper
+#' @example
+#'   herecomes("Hotstepper")
 #'
 #' @importFrom utils browseURL
 #'
 #' @export
-herecomes <- function(what = c("Hotstepper", "IceIceBaby", "Hackerman")) {
+herecomes <- function(who = c("Hotstepper", "SpinDoctor", "KingJames", "Hackerman")) {
 
-  what = match.arg(what)
+  who = match.arg(who)
 
-  switch(what,
+  switch(who,
          Hotstepper = {browseURL(url = "https://www.youtube.com/watch?v=eEJ2b6IaGWU")},
-         IceIceBaby = {browseURL(url = "https://www.youtube.com/watch?v=rog8ou-ZepE")},
+         SpinDoctor = {browseURL(url = "https://www.youtube.com/watch?v=wsdy_rct6uo")},
+         KingJames = {browseURL(url = "https://www.youtube.com/watch?v=ZgzebW6en-c")},
          Hackerman = {browseURL(url = "https://www.youtube.com/watch?v=KEkrWRHCDQU")})
-
 }

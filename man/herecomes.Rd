@@ -4,7 +4,7 @@
 \alias{herecomes}
 \title{Here comes the Hotstepper}
 \usage{
-herecomes(what = c("Hotstepper", "IceIceBaby", "Hackerman"))
+herecomes(who = c("Hotstepper", "SpinDoctor", "KingJames", "Hackerman"))
 }
 \author{
 Christoph Stepper
