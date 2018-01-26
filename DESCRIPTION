@@ -1,15 +1,14 @@
 Package: herecomes
 Type: Package
 Title: Here Comes The Hot Stepper
-Version: 0.1.0
-Date: 2018-01-25
+Version: 0.1.1
+Date: 2018-01-26
 Authors@R: c(
     person("Christoph", "Stepper", email = "christoph.stepper@gmail.com", role = c("aut", "cre"))
     )
-Description: Here comes the Hot Stepper
-    Use four spaces when indenting paragraphs within the Description.
+Description: Here comes the Hot Stepper and other Crew Members.
 BugReports: https://github.com/hot-stepper/herecomes/issues
 License: MIT
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.0.0
+RoxygenNote: 6.0.1

@@ -1,7 +1,15 @@
 #' @title Here comes the Hotstepper
 #'
 #' @author Christoph Stepper
-#' @example
+#'
+#' @param who \code{character}; at the moment one of:
+#'   \itemize{
+#'   \item HotStepper
+#'   \item SpinDoctor
+#'   \item KingJames
+#'   \item Hackerman}
+#'
+#' @examples
 #'   herecomes("Hotstepper")
 #'
 #' @importFrom utils browseURL
@@ -12,8 +20,10 @@ herecomes <- function(who = c("Hotstepper", "SpinDoctor", "KingJames", "Hackerma
   who = match.arg(who)
 
   switch(who,
-         Hotstepper = {browseURL(url = "https://www.youtube.com/watch?v=eEJ2b6IaGWU")},
-         SpinDoctor = {browseURL(url = "https://www.youtube.com/watch?v=wsdy_rct6uo")},
-         KingJames = {browseURL(url = "https://www.youtube.com/watch?v=ZgzebW6en-c")},
-         Hackerman = {browseURL(url = "https://www.youtube.com/watch?v=KEkrWRHCDQU")})
+         Hotstepper = {url = "https://www.youtube.com/watch?v=eEJ2b6IaGWU"},
+         SpinDoctor = {url = "https://www.youtube.com/watch?v=wsdy_rct6uo"},
+         KingJames = {url = "https://www.youtube.com/watch?v=ZgzebW6en-c"},
+         Hackerman = {url = "https://www.youtube.com/watch?v=KEkrWRHCDQU"})
+
+  browseURL(url = url)
 }

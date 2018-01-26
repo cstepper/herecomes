@@ -6,6 +6,18 @@
 \usage{
 herecomes(who = c("Hotstepper", "SpinDoctor", "KingJames", "Hackerman"))
 }
+\arguments{
+\item{who}{\code{character}; at the moment one of:
+\itemize{
+\item HotStepper
+\item SpinDoctor
+\item KingJames
+\item Hackerman}}
+}
+\examples{
+  herecomes("Hotstepper")
+
+}
 \author{
 Christoph Stepper
 }
