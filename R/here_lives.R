@@ -12,15 +12,15 @@
 #'
 #'
 #' @examples
-#'   herelives(crew, all = TRUE)
+#'   options(viewer = NULL)
+#'   crew_map = here_lives(crew, all = TRUE)
+#'   mapview(crew_map)
 #'
 #' @importFrom mapview mapview
-#' @importfFrom stringdist stringdistmatrix
+#' @importFrom stringdist stringdistmatrix
 #'
 #' @export
-herelives <- function(crowd = crew, all = FALSE) {
-
-  options(viewer = NULL)
+here_lives <- function(crowd = crew, all = FALSE) {
 
   if (all == TRUE) {
 
@@ -30,11 +30,14 @@ herelives <- function(crowd = crew, all = FALSE) {
 
     who  = readline(prompt = "Which Crew Member(s) are you interested in? \n")
 
-    # if input string has lenght 1, split input string by given delim and trim whitespace
+    # if input string has length 1, split input string by given delim and trim whitespace
     if (length(who) == 1) {
       who = gsub("\\.|;|-", ",", who)
-      who = trimws(unlist(strsplit(who, split = ",")))
+      who = unlist(strsplit(who, split = ","))
     }
+
+    # remove leading/trailing whitespace
+    who = trimws(who, which = "both")
 
     length_who = length(who)
 

@@ -1,2 +1,27 @@
-# herecomes
-Play _Here Comes the Hotstepper_, a song co-written and recorded by Jamaican dancehall artist _Ini Kamoze_.
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+herecomes <img src="man/figures/herecomes_logo.png" align="right" />
+====================================================================
+
+Overview
+--------
+
+Package *herecomes* provides some funny functions for playing *youtube videos* for the crew members.
+
+Currently, the crew members are:
+
+-   Hotstepper
+-   SpinDoctor
+-   KingJames
+-   Hackerman
+
+Have fun while watching the videos and figure out, where you can finde those dudes.
+
+Installation
+------------
+
+``` r
+# Install the development version from GitHub:
+# install.packages("devtools")
+devtools::install_github("hot-stepper/herecomes")
+```

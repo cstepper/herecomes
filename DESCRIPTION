@@ -1,8 +1,8 @@
 Package: herecomes
 Type: Package
 Title: Here Comes The Hot Stepper
-Version: 0.1.1
-Date: 2018-01-26
+Version: 0.1.2
+Date: 2018-01-28
 Authors@R: c(
     person("Christoph", "Stepper", email = "christoph.stepper@gmail.com", role = c("aut", "cre"))
     )
