@@ -14,6 +14,7 @@ Currently, the crew members are:
 -   SpinDoctor
 -   KingJames
 -   Hackerman
+-   DirtyDan
 
 Have fun while watching the videos and figure out, where you can finde those dudes.
 
