@@ -3,9 +3,9 @@
 #' @author Christoph Stepper
 #' @author Tim Appelhans
 #'
-#' @param crowd \code{sf} data frame. Check the package data \emph{crew}
+#' @param crew \code{sf} data frame. Check the package data \emph{crew}
 #'   to see the data structure.
-#' @param all \code{logical}. Should all crew members be shown.
+#' @param all_members \code{logical}. Should all crew members be shown.
 #'   If \code{FALSE}, user input is evaluated to create subset.
 #'
 #' @return \code{mapview} object.
@@ -13,49 +13,26 @@
 #'
 #' @examples
 #'   options(viewer = NULL)
-#'   crew_map = here_lives(crew, all = TRUE)
-#'   mapview(crew_map)
+#'   crew_map = here_lives(crew, all_members = TRUE)
+#'   crew_map
+#'
 #'
 #' @importFrom mapview mapview
 #' @importFrom stringdist stringdistmatrix
 #'
 #' @export
-here_lives <- function(crowd = crew, all = FALSE) {
+here_lives <- function(crew = crew, all_members = FALSE) {
 
-  if (all == TRUE) {
+  # subset data to relevant crew members
+  crew_who = identify_crew_member(crew = crew, all_members = all_members)
 
-    crew_who = crew
+  # build url
+  crew_who$url <- paste0("https://www.youtube.com/embed/", crew_who$youtube, "?autoplay=1")
 
-  } else {
-
-    who  = readline(prompt = "Which Crew Member(s) are you interested in? \n")
-
-    # if input string has length 1, split input string by given delim and trim whitespace
-    if (length(who) == 1) {
-      who = gsub("\\.|;|-", ",", who)
-      who = unlist(strsplit(who, split = ","))
-    }
-
-    # remove leading/trailing whitespace
-    who = trimws(who, which = "both")
-
-    length_who = length(who)
-
-    # use stringdistance to identify crew member
-    dist_who = stringdist::stringdistmatrix(who, crew$name)
-    keep_who = apply(dist_who, 1, which.min)
-
-    # throw error if subset is not unambiguous
-    stopifnot(length_who == length(keep_who))
-
-    # do the subset
-    crew_who = crew[keep_who, ]
-
-  }
 
   # generate the map
-  map = suppressWarnings(mapview::mapview(crew_who, zcol = "name",
-                         popup = lapply(crew_who$url, mapview:::popupIframe)))
+  crew_map = suppressWarnings(mapview::mapview(crew_who, zcol = "name",
+                              popup = lapply(crew_who$url, mapview:::popupIframe)))
 
 }
 

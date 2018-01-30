@@ -3,11 +3,11 @@
 \docType{data}
 \name{crew}
 \alias{crew}
-\title{The Crew.}
-\format{A \code{sf} data frame with 4 rows and 3 variables:
+\title{The Crew}
+\format{A \code{sf} data frame with 5 rows and 3 variables:
 \describe{
   \item{name}{nickname of the crew member}
-  \item{url}{url to recognition video}
+  \item{youtube}{youtube ID to recognition video}
   \item{geometry}{coordinates of where to find the dude}
   }}
 \usage{

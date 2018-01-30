@@ -7,15 +7,16 @@
 #'   \item HotStepper
 #'   \item SpinDoctor
 #'   \item KingJames
-#'   \item Hackerman}
+#'   \item Hackerman
+#'   \item Dirtydan}
 #'
 #' @examples
-#'   herecomes("Hotstepper")
+#'   here_comes("Hotstepper")
 #'
 #' @importFrom utils browseURL
 #'
 #' @export
-herecomes <- function(who = c("Hotstepper", "SpinDoctor", "KingJames", "Hackerman")) {
+here_comes <- function(who = c("Hotstepper", "SpinDoctor", "KingJames", "Hackerman", "Dirtydan")) {
 
   who = match.arg(who)
 
@@ -23,7 +24,8 @@ herecomes <- function(who = c("Hotstepper", "SpinDoctor", "KingJames", "Hackerma
          Hotstepper = {url = "https://www.youtube.com/watch?v=eEJ2b6IaGWU"},
          SpinDoctor = {url = "https://www.youtube.com/watch?v=wsdy_rct6uo"},
          KingJames = {url = "https://www.youtube.com/watch?v=ZgzebW6en-c"},
-         Hackerman = {url = "https://www.youtube.com/watch?v=KEkrWRHCDQU"})
+         Hackerman = {url = "https://www.youtube.com/watch?v=KEkrWRHCDQU"},
+         Dirtydan = {url = "https://www.youtube.com/watch?v=CN1OV9fh3uI"},)
 
   browseURL(url = url)
 }
