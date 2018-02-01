@@ -4,10 +4,10 @@
 \alias{identify_crew_member}
 \title{Identify Crew Members}
 \usage{
-identify_crew_member(crew = crew, all_members = FALSE)
+identify_crew_member(crew = hottest_crew, all_members = FALSE)
 }
 \arguments{
-\item{crew}{\code{sf} data frame. Check the package data \emph{crew}
+\item{crew}{\code{sf} data frame. Check the package data \emph{hottest_crew}
 to see the data structure.}
 
 \item{all_members}{\code{logical}. Should all crew members be selected.

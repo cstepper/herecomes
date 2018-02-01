@@ -1,4 +1,4 @@
-#' The Crew
+#' The Hottest Crew
 #'
 #' A dataset containing the crew member nicknames, their location and
 #' their recognition videos.
@@ -10,4 +10,4 @@
 #'   \item{geometry}{coordinates of where to find the dude}
 #'   }
 #'
-"crew"
+"hottest_crew"

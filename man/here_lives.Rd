@@ -4,10 +4,10 @@
 \alias{here_lives}
 \title{The Crew lives here}
 \usage{
-here_lives(crew = crew, all_members = FALSE)
+here_lives(crew = hottest_crew, all_members = FALSE)
 }
 \arguments{
-\item{crew}{\code{sf} data frame. Check the package data \emph{crew}
+\item{crew}{\code{sf} data frame. Check the package data \emph{hottest_crew}
 to see the data structure.}
 
 \item{all_members}{\code{logical}. Should all crew members be shown.
@@ -20,6 +20,7 @@ If \code{FALSE}, user input is evaluated to create subset.}
   options(viewer = NULL)
   crew_map = here_lives(crew, all_members = TRUE)
   crew_map
+
 
 
 }

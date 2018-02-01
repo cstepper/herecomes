@@ -2,7 +2,7 @@
 #'
 #' @author Christoph Stepper
 #'
-#' @param crew \code{sf} data frame. Check the package data \emph{crew}
+#' @param crew \code{sf} data frame. Check the package data \emph{hottest_crew}
 #'   to see the data structure.
 #' @param all_members \code{logical}. Should all crew members be selected.
 #'   If \code{FALSE}, user input is evaluated to create subset.
@@ -11,7 +11,7 @@
 #'
 #' @importFrom stringdist stringdistmatrix
 #'
-identify_crew_member <- function(crew = crew, all_members = FALSE) {
+identify_crew_member <- function(crew = hottest_crew, all_members = FALSE) {
 
   if (all_members == TRUE) {
 
@@ -24,10 +24,16 @@ identify_crew_member <- function(crew = crew, all_members = FALSE) {
 
     # if input string has length 1, split input string by given delim and trim whitespace
     if (length(who) == 1) {
-      who = gsub("\\.|;|-|,", " ", who)
-      who = gsub("\\s+", " ", who)
+      # substitute all punctuation charactes by space
+      who = gsub("[[:punct:]]", " ", who)
+      # trim whitespace if there would be any at the beginning or end of the string
+      who = trimws(who, which = "both")
 
-      who = unlist(strsplit(who, split = " "))
+      # # make all space separator to nchar == 1
+      # who = gsub("[[:space:]]+", " ", who)
+
+      # split for single strings
+      who = unlist(strsplit(who, split = "\\s+"))
     }
 
     # remove leading/trailing whitespace
@@ -36,8 +42,10 @@ identify_crew_member <- function(crew = crew, all_members = FALSE) {
     length_who = length(who)
 
     # use stringdistance to identify crew member
-    dist_who = stringdist::stringdistmatrix(who, crew$name)
-    keep_who = apply(dist_who, 1, which.min)
+    dist_who = stringdist::stringdistmatrix(a = who, b = crew$name)
+    keep_who = apply(X = dist_who, MARGIN = 1, FUN = which.min)
+    keep_who = unique(keep_who)
+
 
     # throw error if subset is not unambiguous
     stopifnot(length_who == length(keep_who))
