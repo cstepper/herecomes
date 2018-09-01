@@ -1,13 +1,13 @@
 Package: herecomes
 Type: Package
 Title: Here Comes The Hot Stepper
-Version: 0.1.4
-Date: 2018-02-01
+Version: 0.1.5
+Date: 2018-09-01
 Authors@R: c(
     person("Christoph", "Stepper", email = "christoph.stepper@gmail.com", role = c("aut", "cre"))
     )
 Description: Here comes the Hot Stepper and other Crew Members.
-BugReports: https://github.com/hot-stepper/herecomes/issues
+BugReports: https://github.com/cstepper/herecomes/issues
 License: MIT
 Encoding: UTF-8
 LazyData: true

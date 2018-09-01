@@ -24,5 +24,5 @@ Installation
 ``` r
 # Install the development version from GitHub:
 # install.packages("devtools")
-devtools::install_github("hot-stepper/herecomes")
+devtools::install_github("cstepper/herecomes")
 ```
