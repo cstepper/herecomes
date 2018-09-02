@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-herecomes <img src="man/figures/herecomes_logo.png" align="right" />
-====================================================================
+herecomes <img src="man/figures/herecomes_logo_hex.png" align="right" />
+========================================================================
 
 Overview
 --------
