@@ -16,7 +16,7 @@ options(tibble.print_min = 5, tibble.print_max = 5)
 ```
 
 
-# herecomes <img src="man/figures/herecomes_logo.png" align="right" />
+# herecomes <img src="man/figures/herecomes_logo_hex.png" align="right" />
 
 
 ## Overview
