@@ -1,25 +1,25 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-herecomes <img src="man/figures/herecomes_logo_hex.png" align="right" />
-========================================================================
 
-Overview
---------
+# herecomes <img src="man/figures/herecomes_logo_hex.png" align="right" />
 
-Package *herecomes* provides some funny functions for playing *youtube videos* for the crew members.
+## Overview
 
-Currently, the crew members are:
+Package *herecomes* provides some funny functions for playing *youtube
+videos* for the crew members.
 
--   Hotstepper
--   SpinDoctor
--   KingJames
--   Hackerman
--   DirtyDan
+The crew members were:
 
-Have fun while watching the videos and figure out, where you can finde those dudes.
+  - Hotstepper
+  - SpinDoctor
+  - KingJames
+  - Hackerman
+  - DirtyDan
 
-Installation
-------------
+Have fun while watching the videos and figure out, where you can finde
+those dudes.
+
+## Installation
 
 ``` r
 # Install the development version from GitHub:
