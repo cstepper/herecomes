@@ -8,7 +8,7 @@
 Package *herecomes* provides some funny functions for playing *youtube
 videos* for the crew members.
 
-The initial crew members were:
+The crew members were the following:
 
   - Hotstepper
   - SpinDoctor

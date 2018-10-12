@@ -24,7 +24,7 @@ options(tibble.print_min = 5, tibble.print_max = 5)
 Package _herecomes_ provides some funny functions for playing _youtube videos_ for 
 the crew members.
 
-The crew members were:
+The crew members were the following:
 
 * Hotstepper
 * SpinDoctor
