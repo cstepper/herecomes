@@ -3,7 +3,7 @@
 #' @author Christoph Stepper
 #' @author Tim Appelhans
 #'
-#' @param crew \code{sf} data frame. Check the package data \emph{hottest_crew}
+#' @param crew \code{sf} data.frame. Check the package data \emph{hottest_crew}
 #'   to see the data structure.
 #' @param all_members \code{logical}. Should all crew members be shown.
 #'   If \code{FALSE}, user input is evaluated to create subset.
