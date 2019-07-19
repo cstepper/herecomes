@@ -13,5 +13,5 @@ youtube = c("eEJ2b6IaGWU",
 hottest_crew = tibble::tibble(name, x, y, youtube)
 hottest_crew = sf::st_as_sf(crew, coords = c("x", "y"), crs = 4326)
 
-devtools::use_data(hottest_crew, overwrite = TRUE)
+usethis::use_data(hottest_crew, overwrite = TRUE)
 
