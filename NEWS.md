@@ -1,4 +1,4 @@
-## herecomes 0.1.6 (2019-07-19)
+## herecomes 0.1.6 (2019-08-02)
 
 #### 💬 documentation etc
 
