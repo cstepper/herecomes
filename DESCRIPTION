@@ -1,12 +1,14 @@
 Package: herecomes
 Title: Here Comes The Hot Stepper
 Version: 0.1.6
-Authors@R: c(
-    person(given = "Christoph", 
-           family = "Stepper", 
+Authors@R: 
+    person(given = "Christoph",
+           family = "Stepper",
            role = c("aut", "cre"),
-           email = "christoph.stepper@gmail.com"))
+           email = "christoph.stepper@gmail.com")
 Description: Here comes the Hot Stepper and other Crew Members.
+License: MIT + file LICENSE
+BugReports: https://github.com/cstepper/herecomes/issues
 Depends: 
     R (>= 3.6.0)
 Imports: 
@@ -16,8 +18,6 @@ Imports:
 Suggests:
     remotes,
     usethis
-BugReports: https://github.com/cstepper/herecomes/issues
-License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
